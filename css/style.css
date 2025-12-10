@@ -538,3 +538,141 @@ body {
         text-align: center;
     }
 }
+
+/*--Organizacional--*/
+.organizacional-section {
+    background: #eef5f2;
+    padding: 80px 120px;
+    /*text-align: justify;*/
+}
+
+.org__tag {
+    background: rgba(44, 122, 116, 0.15);
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: var(--text-small * 2);
+    color: var(--color-principal);
+    font-weight: 500;
+}
+
+.section-title {
+    font-size: 2.8rem;
+    color: #0b241c;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-family: 'Georgia', serif;
+}
+
+/*    2 COLUMNAS PRINCIPALES */
+.organizacional-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 40px;
+    text-align: left;
+}
+
+/*    COLUMNA IZQUIERDA */
+
+.sub-title {
+    font-size: 36px;
+    color: #0b241c;
+    margin-bottom: 15px;
+    font-family: 'Georgia', serif;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.intro-text {
+    color: #4b5b52;
+    margin-bottom: 30px;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/* servicios en 2x2 */
+.organizacional-section .services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.service-item {
+    display: flex;
+    gap: 15px;
+    padding: 18px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.service-item i {
+    background: #dceee7;
+    padding: 12px;
+    border-radius: 8px;
+    color: #0b5741;
+}
+
+/*   COLUMNA DERECHA (TARJETA) */
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-left: 20px;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #0b241c;
+}
+
+.reasons-list {
+    list-style: none;
+    padding: 0;
+}
+
+.reasons-list li {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    color: #4b5b52;
+    font-size: 16px;
+}
+
+.reasons-list i {
+    color: #0b5741;
+}
+
+/*   BOTÓN FINAL */
+.button-wrapper {
+    margin-top: 45px;
+}
+
+.btn-org {
+    background: #0b5741;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/*    RESPONSIVE */
+@media (max-width: 1000px) {
+    .organizacional-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 700px) {
+    .organizacional-section .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
