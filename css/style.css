@@ -1,0 +1,189 @@
+/* ======================================================
+   VARIABLES GLOBALES
+====================================================== */
+:root {
+    --color-principal: #2c7a74;
+    --color-secundario: #3aa394;
+    --color-texto: #103a2f;
+    --color-gris: #5E6F66;
+    --color-fondo: #f8fdfc;
+    --font-main: 'Helvetica Neue', Arial, sans-serif;
+    --font-secundario: 'Georgia', serif;
+    --text-small: 0.875rem;
+    --text-base: 1rem;
+    --text-medium: 1.125rem;
+    --text-large: 1.375rem;
+
+    --size: 1rem;
+    --radius-lg: 1rem;
+    --radius-sm: 0.75rem;
+    --size: 0.25rem;
+}
+
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+/*--HEADER--*/
+.header {
+    width: 100%;
+    padding: 8px 60px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header__logo img {
+    width: 200px;
+}
+
+.header__logo span {
+    font-size: var(--text-large);
+    font-weight: 600;
+    color: var(--color-principal);
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.header__nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.header__nav ul li a {
+    text-decoration: none;
+    font-size: var(--text-medium);
+    color: var(--color-gris);
+    transition: 0.3s;
+}
+
+.header__nav ul li a:hover {
+    color: var(--color-principal);
+}
+
+/* Botón Agendar Cita */
+.btn-cita {
+    background: var(--color-principal);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: var(--text-medium);
+    transition: 0.3s;
+}
+
+.btn-cita:hover {
+    background: var(--color-secundario);
+}
+
+/*--HERO--*/
+.hero {
+    width: 100%;
+    height: 95vh;
+    background: url('../img/hero-therapy.jpg') center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+
+    /* capa tenue encima de la imagen */
+    background-blend-mode: overlay;
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+.hero__content {
+    max-width: 650px;
+    z-index: 2;
+}
+
+.hero__tag {
+    background: rgba(44, 122, 116, 0.15);
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: var(--text-small * 2);
+    color: var(--color-principal);
+    font-weight: 500;
+}
+
+.hero__title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 25px;
+    color: var(--color-texto);
+    font-family: var(--font-secundario)
+}
+
+.hero__title span {
+    color: var(--color-principal);
+}
+
+.hero__text {
+    margin-top: 20px;
+    font-size: var(--text-medium);
+    color: var(--color-gris);
+    line-height: 1.6;
+}
+
+/* Botones */
+.hero__buttons {
+    margin-top: 35px;
+    display: flex;
+    gap: 20px;
+}
+
+.btn-primary {
+    background: var(--color-principal);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: var(--text-medium);
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: var(--color-secundario);
+}
+
+.btn-outline {
+    border: 2px solid var(--color-principal);
+    padding: 12px 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: var(--text-medium);
+    color: var(--color-principal);
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: var(--color-principal);
+    color: white;
+}
